@@ -32,7 +32,6 @@ function response_from_helper (response) {
     // JavaScript body loads, *it* issues a 'status', and that creates an infinite loop.
     location.reload();
   } else if (response.hasOwnProperty('list_all')) {
-    alert("point1");
     var t = response.list_all;
     populate_extension_list(t)
   } else if (response.hasOwnProperty('status_all')) {
@@ -59,7 +58,6 @@ function response_from_helper (response) {
      var ul;
      var li;
 
-     alert(js);
 
      js.forEach(function(item, index, array) {
        console.log(item[0], item[1], index);
