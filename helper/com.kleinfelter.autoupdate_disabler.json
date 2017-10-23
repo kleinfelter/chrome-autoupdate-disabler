@@ -1,0 +1,10 @@
+//com.kleinfelter.autoupdate_disabler.json
+{
+  "name": "com.kleinfelter.autoupdate_disabler",
+  "description": "autoupdate_disabler extension helper",
+  "path": "PATH_TOKEN",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://pfijgddffdeabjfpkfikmkfdpaleebek/"
+  ]
+}

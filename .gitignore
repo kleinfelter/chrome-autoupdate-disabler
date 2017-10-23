@@ -1,0 +1,5 @@
+helper/build/helper
+helper/dist
+helper/Output/setup.exe
+*.tmp
+*.bak

@@ -1,0 +1,35 @@
+{
+  "name": "Extension Update Disabler",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Disable auto-update of Chrome extensions",
+  "homepage_url": "http://kleinfelter.com/update-disabler/",
+
+  // Extension ID: pfijgddffdeabjfpkfikmkfdpaleebek
+
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnIkZombuBf2c0uOaUtEA+FBzReXRGJZn8BX5ZlMNe2fwLfyYJds2Tc8Ryexckoa37+JCnTw5Nt77PLY/5HuMUJqqFiytgwoDso/v78AtfC29Q4SfKMuoJeg5dBnpZyuM2siSI7F9yiEB0AWbRr1fUWdHJfS0vykFQB13+AkaVumq1lzYLgDpJsHJeERbsTkTXwCWV4/5IUogBJ1I4HghR48N9Ph95R2VvEt3mEVreUx2CXMuq56r3JFP+hgqdlmjI7bOL3TH5xM2q9bg5a7FtJyVuBCUGbKPXX7qGt9K91Mo2owO/NQIArWM4v6nUqlvcXYhog2NdHqxEYpK7UeqwQIDAQAB",
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "options_page": "options.html",
+  "browser_action": {
+    "default_icon": {
+      "19": "icons/icon19.png",
+      "38": "icons/icon38.png"
+    },
+    "default_title": "Disable auto-update of Chrome extensions"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs",
+    "notifications",
+    "nativeMessaging"
+  ]
+}

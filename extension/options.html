@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Extension Update Disabler</title>
+</head>
+<body>
+<h3>Extension Update Disabler</h3>
+<p>Chrome automatically updates your extensions.  There have been occasions where an extension developer
+has lost/sold control of his extension to a malware author.  Or maybe you just want to control when
+updates hit your system.
+
+The <em>Extension Update Disabler</em> extension empowers you to enable/disable automatic updates of
+your Chrome extensions.
+</p>
+<br/>
+<p>Note: If you use this extension, it becomes <em>your</em> responsibility to ensure that security updates
+get installed on your system to prevent breaches.</p>
+<br/>
+Current status of auto-update is: <b><span id="update-status">unknown</span></b>
+<br/>
+<br/>
+<button id="pbDisableAutoUpdate">Disable auto-update</button>
+<button id="pbEnableAutoUpdate" >Enable auto-update</button>
+<button id="pbListExtensions" > List Extensions</button>
+<br/>
+<ul id="extensionList">
+</ul>
+<br/>
+<span id= "helper-instructions">This extension requires you to install a separate 'helper' application from <a href="http://kleinfelter.com/update-disabler/">this page</a>.</span>
+<br/>
+Helper status is: <span id="plugin-found">unknown</span>
+<br/>
+<br/>
+Chrome does not allow extensions to alter the auto-update behavior of other extension directly, so you install a
+separate executable 'helper' app on your local system, and that helper app updates your extensions to be unable to
+auto-update themselves.  After you install the helper, you can close and reopen this extension in order to 'see' the helper.
+<br/><br/>
+If you install new extensions after disabling auto-updates, those new extensions will be ENABLED.  (That's how they got installed.)
+Disabling extensions just marks currently installed extensions disabled -- it does not monitor for newly installed extensions.
+If you want new extentions to be disabled, you must come here and disable auto-update after installing them.
+<script src="options.js"></script>
+</body>
+</html>
